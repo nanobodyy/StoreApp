@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,9 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        //fillDatabase()
+        
         return true
     }
-
+    
+    private func fillDatabase(){
+        //FirebaseHandler(nil).setValue()//очистка базы перед вызовом
+        let product = Product(name: "Cheese", price: 44.0, rating: 5.0, imageUrl: nil)
+        FirebaseHandler(product)
+            .auto()
+            .setValue()
+    }
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
