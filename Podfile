@@ -7,4 +7,5 @@ target 'StoreApp' do
 
   # Pods for StoreApp
 	pod 'Firebase/Database'
+	pod 'Kingfisher'
 end

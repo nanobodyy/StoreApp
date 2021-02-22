@@ -52,7 +52,6 @@ struct FirebaseHandler {
         actualReference.setValue(dictionary) { (error, reference) in
             
         }
-        
         return self
     }
 }

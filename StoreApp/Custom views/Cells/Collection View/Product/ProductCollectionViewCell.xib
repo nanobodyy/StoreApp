@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCollectionViewCell" customModule="StoreApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="252" height="270"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="252" height="270"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="27Q-EM-X7R">
+                        <rect key="frame" x="0.0" y="0.0" width="252" height="134.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.97257119420000004" green="0.97253173589999997" blue="0.97254997489999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="27Q-EM-X7R" secondAttribute="height" multiplier="15:8" id="H5Y-pf-Z10"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Голандский сыр" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4YC-II-yrU">
+                        <rect key="frame" x="8" y="142.5" width="236" height="20.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" name="AccentColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25.0 $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReN-Oj-QPT">
+                        <rect key="frame" x="8" y="163" width="236" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рейтинг: 5.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boE-8f-xzV">
+                        <rect key="frame" x="8" y="180" width="236" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZG-b9-B3A">
+                        <rect key="frame" x="8" y="205" width="236" height="57"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                        <state key="normal" title="Купить">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OZG-b9-B3A" secondAttribute="trailing" constant="8" id="IZg-gu-URq"/>
+                <constraint firstItem="OZG-b9-B3A" firstAttribute="top" secondItem="boE-8f-xzV" secondAttribute="bottom" constant="8" id="KTs-5q-TrB"/>
+                <constraint firstAttribute="trailing" secondItem="ReN-Oj-QPT" secondAttribute="trailing" constant="8" id="MvX-j4-yoz"/>
+                <constraint firstItem="4YC-II-yrU" firstAttribute="top" secondItem="27Q-EM-X7R" secondAttribute="bottom" constant="8" id="TJe-qj-sRy"/>
+                <constraint firstAttribute="trailing" secondItem="27Q-EM-X7R" secondAttribute="trailing" id="a96-mP-eED"/>
+                <constraint firstItem="27Q-EM-X7R" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eWZ-5N-Awv"/>
+                <constraint firstItem="27Q-EM-X7R" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="grc-Ur-1V3"/>
+                <constraint firstItem="ReN-Oj-QPT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="hPr-Pj-7Tz"/>
+                <constraint firstItem="boE-8f-xzV" firstAttribute="top" secondItem="ReN-Oj-QPT" secondAttribute="bottom" id="ida-NO-jBU"/>
+                <constraint firstItem="OZG-b9-B3A" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="nJy-jR-zta"/>
+                <constraint firstAttribute="bottom" secondItem="OZG-b9-B3A" secondAttribute="bottom" constant="8" id="obY-rv-tyv"/>
+                <constraint firstAttribute="trailing" secondItem="4YC-II-yrU" secondAttribute="trailing" constant="8" id="p4n-gY-CPc"/>
+                <constraint firstItem="ReN-Oj-QPT" firstAttribute="top" secondItem="4YC-II-yrU" secondAttribute="bottom" id="rm3-Zy-VwR"/>
+                <constraint firstAttribute="trailing" secondItem="boE-8f-xzV" secondAttribute="trailing" constant="8" id="snf-XL-LmV"/>
+                <constraint firstItem="boE-8f-xzV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="tLa-9D-uHY"/>
+                <constraint firstItem="4YC-II-yrU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="xMC-Lb-yrh"/>
+            </constraints>
+            <size key="customSize" width="252" height="270"/>
+            <connections>
+                <outlet property="button" destination="OZG-b9-B3A" id="GpP-HP-dQt"/>
+                <outlet property="imageView" destination="27Q-EM-X7R" id="4ju-SH-BSZ"/>
+                <outlet property="priceLabel" destination="ReN-Oj-QPT" id="olu-xl-13e"/>
+                <outlet property="ratingLabel" destination="boE-8f-xzV" id="wyl-7P-Wan"/>
+                <outlet property="titleLabel" destination="4YC-II-yrU" id="vAn-21-bBP"/>
+            </connections>
+            <point key="canvasLocation" x="231.8840579710145" y="88.392857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.66100001335144043" green="0.76899999380111694" blue="0.090000003576278687" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
