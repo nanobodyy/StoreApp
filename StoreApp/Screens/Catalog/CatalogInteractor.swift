@@ -12,7 +12,8 @@ class CatalogIneractor {
     
     func fetchProducts() {
         FirebaseHandler().read { (response: [String: Product]?) in
-            print(1)
+            let products = (response ?? [:]).map { $0.value }
+            self.presenter?.didFetchProduct(products: products)
         }
     }
 }

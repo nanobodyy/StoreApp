@@ -25,6 +25,7 @@
 		99C96A6B25E3F86600705FA5 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99C96A6925E3F86600705FA5 /* ProductCollectionViewCell.xib */; };
 		99F7131925E3FDED001751D2 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F7131825E3FDED001751D2 /* NibLoadable.swift */; };
 		99F7132A25E405AF001751D2 /* CatalogDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F7132925E405AF001751D2 /* CatalogDataSource.swift */; };
+		99F7133925E4F616001751D2 /* CatalogAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F7133825E4F616001751D2 /* CatalogAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		99C96A6925E3F86600705FA5 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
 		99F7131825E3FDED001751D2 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		99F7132925E405AF001751D2 /* CatalogDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDataSource.swift; sourceTree = "<group>"; };
+		99F7133825E4F616001751D2 /* CatalogAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogAssembly.swift; sourceTree = "<group>"; };
 		D703BF36254609687AB7CA73 /* Pods-StoreApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreApp.debug.xcconfig"; path = "Target Support Files/Pods-StoreApp/Pods-StoreApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 				99F7131725E3FDCF001751D2 /* Protocols */,
 				99F7132825E40519001751D2 /* DataSources */,
 				99C96A6425E3F80A00705FA5 /* Custom views */,
+				99F7133725E4F5EC001751D2 /* Assembly */,
 				99C96A5025E3F55900705FA5 /* Screens */,
 				99C96A6025E3F76C00705FA5 /* Extensions */,
 				99C96A6125E3F79B00705FA5 /* Models */,
@@ -201,6 +204,14 @@
 				99F7132925E405AF001751D2 /* CatalogDataSource.swift */,
 			);
 			path = DataSources;
+			sourceTree = "<group>";
+		};
+		99F7133725E4F5EC001751D2 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				99F7133825E4F616001751D2 /* CatalogAssembly.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		E3F59F51DA62291B2CA51129 /* Pods */ = {
@@ -335,6 +346,7 @@
 				997D43E925E2C5030050F35C /* Model.swift in Sources */,
 				99F7131925E3FDED001751D2 /* NibLoadable.swift in Sources */,
 				99C96A5925E3F5BB00705FA5 /* CatalogPresenter.swift in Sources */,
+				99F7133925E4F616001751D2 /* CatalogAssembly.swift in Sources */,
 				997D43C225E2C46E0050F35C /* SceneDelegate.swift in Sources */,
 				99F7132A25E405AF001751D2 /* CatalogDataSource.swift in Sources */,
 				997D43ED25E2C5180050F35C /* FirebasHandler.swift in Sources */,

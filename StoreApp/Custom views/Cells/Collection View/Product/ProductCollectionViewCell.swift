@@ -18,7 +18,12 @@ class ProductCollectionViewCell: UICollectionViewCell, NibLoadable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-         
+        button.layer.cornerRadius = 10
+        imageView.layer.cornerRadius = 10
+        layer.cornerRadius = 10
+        
+        ratingLabel.minimumScaleFactor = 0.2
+        ratingLabel.adjustsFontSizeToFitWidth = true
     }
     
     func configure(by product: Product) {

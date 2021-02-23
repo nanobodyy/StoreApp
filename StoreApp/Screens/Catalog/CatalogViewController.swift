@@ -11,13 +11,19 @@ class CatalogViewController: UIViewController {
 
     @IBOutlet private weak var collectionView: UICollectionView!
     
-    private let numberOfColums: CGFloat = 2
-    private let spacing: CGFloat = 16
-    
     var presenter: CatalogPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.register(ProductCollectionViewCell.nib, forCellWithReuseIdentifier: ProductCollectionViewCell.nibName)
+        presenter?.viewLoaded()
+        presenter?.subscribe(collectionView: collectionView )
+        title = "Каталог"
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    func reloadView(){
+        collectionView.reloadData()
     }
 }
